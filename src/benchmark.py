@@ -45,7 +45,7 @@ def sweep(log2n, max_threads, csv_path):
 
     with open(csv_path, "w", newline="") as f:
         writer = csv.writer(f)
-        header = ["rank", "shape", "processes", "run1", "run2", "run3",
+        header = ["rank", "shape", "threads", "run1", "run2", "run3",
                   "median_time", "traffic_bytes", "bandwidth_gbs", "speedup"]
         writer.writerow(header)
         print(",".join(header))
